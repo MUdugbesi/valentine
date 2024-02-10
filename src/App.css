@@ -1,0 +1,10 @@
+#root {
+  width: 50%;
+  height: auto;
+  padding: 5em;
+  background: linear-gradient(22deg, rgba(209, 209, 247, 1) 10%, rgba(242, 242, 247, 1) 39%, rgba(255, 255, 255, 1) 65%, rgba(244, 195, 195, 1) 94%);
+  margin: 0 auto;
+  margin-top: 4em;
+  margin-bottom: 3em;
+  border-radius: 2px;
+}
