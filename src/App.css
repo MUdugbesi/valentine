@@ -13,6 +13,7 @@
   body{
     width: 100%;
     overflow: hidden;
+    max-height: 10px;
   }
   #root {
     width: 80%;
@@ -23,7 +24,7 @@
 @media only screen and (max-width: 320px) {
   body{
     width: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
   }
   #root {
     width: 50%;
