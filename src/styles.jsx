@@ -28,24 +28,24 @@ export const Text = styled.p`
     
 `;
 
-export const Round = styled.div`
-width:100px;
-height: 100px;
-border: none;
-border-radius: 50%;
-background-color:${(props) => props.theme.colors.p};
-will-change: filter;
-transition: filter 300ms;
-display: flex;
-align-items: center;
-  justify-content: center;
-padding: 10px;
-:hover{
-    animation: ${Spin} infinite 10s linear;
-    filter: drop-shadow(0 0 2em red);
-    cursor: pointer;
-}
-`;
+// export const Round = styled.div`
+// width:100px;
+// height: 100px;
+// border: none;
+// border-radius: 50%;
+// background-color:${(props) => props.theme.colors.p};
+// will-change: filter;
+// transition: filter 300ms;
+// display: flex;
+// align-items: center;
+//   justify-content: center;
+// padding: 10px;
+// :hover{
+//     animation: ${Spin} infinite 10s linear;
+//     filter: drop-shadow(0 0 2em red);
+//     cursor: pointer;
+// }
+// `;
 
 export const Button = styled.button`
   border-radius: 10px;
@@ -108,7 +108,7 @@ export const Image = styled.img`
 max-width: 100%;
 margin-top: 20%;
 margin-bottom: 10%;
-animation: ${Spin} infinite 12s linear 5s;
+animation: ${Spin} infinite 15s linear 10s;
 :hover{
 }
 `;
