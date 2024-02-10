@@ -13,7 +13,7 @@ function App() {
   const [randNumber, setRandNumber] = useState(10);
 
   const handleNo = () => {
-    setRandNumber(() => Math.floor(Math.random() * 100));
+    setRandNumber(() => Math.floor(Math.random() * 40));
 
     const setStyle = () => {
       const hSides = ['right', 'left'];
