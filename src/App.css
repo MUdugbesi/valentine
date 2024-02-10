@@ -8,3 +8,26 @@
   margin-bottom: 3em;
   border-radius: 2px;
 }
+
+@media only screen and (max-width: 400px) {
+  body{
+    width: 100%;
+    overflow: hidden;
+  }
+  #root {
+    width: 80%;
+    height: 100%;
+    padding: 1em;
+  }
+}
+@media only screen and (max-width: 320px) {
+  body{
+    width: 100%;
+    overflow: hidden;
+  }
+  #root {
+    width: 50%;
+    height: 100%;
+
+  }
+}

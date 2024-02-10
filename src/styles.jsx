@@ -48,6 +48,7 @@ export const Text = styled.p`
 // `;
 
 export const Button = styled.button`
+display: flex;
   border-radius: 10px;
   border: 1px solid transparent;
   padding: 1em 2em;
@@ -63,6 +64,20 @@ export const Button = styled.button`
     filter: drop-shadow(0 0 2em #7209b7);
     
   }
+
+  @media (max-width:950px){
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-size: 0.75em;
+    justify-content: center;
+    align-items: center;
+   }
+  @media (max-width:620px){
+    width: 15px;
+    height: 30px;
+    font-size: 0.5em
+   }
 `;
 
 export const CardWrapper = styled.div`
@@ -76,14 +91,37 @@ export const CardWrapper = styled.div`
 
   overflow: scroll;
   margin: 0 auto;
+
+  @media (max-width:950px){
+    width: 100%;
+    height: 50%
+  }
+  @media (max-width:620px){
+    width: 90%;
+    height: 400px;
+    padding: 1em 2em;
+  }
+  @media (max-width:400px){
+    width: 50%;
+    height:300px;
+    padding: 1em 2em;
+  }
 `;
 
 export const ButtonWrapper = styled.div`
 display: flex;
+justify-content: center;
+align-items: center
 width: auto;
 height: auto;
 padding: 1em 2em;
 gap: 70px;
+
+@media (max-width:950px){
+ width: 40%;
+ height: 40px;
+ gap: 30px
+}
 `;
 
 export const TextWrapper = styled.div`
@@ -110,4 +148,16 @@ margin-top: 20%;
 margin-bottom: 10%;
 animation: ${Spin} infinite 15s linear 10s;
 
+
+ @media (max-width:950px){
+    width: 50%;
+  }
+
+  @media (max-width:620px){
+    width: 40%;
+  }
+  @media (max-width:400px){
+    width: 80%;
+    
+  }
 `;
