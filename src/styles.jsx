@@ -109,6 +109,5 @@ max-width: 100%;
 margin-top: 20%;
 margin-bottom: 10%;
 animation: ${Spin} infinite 15s linear 10s;
-:hover{
-}
+
 `;
