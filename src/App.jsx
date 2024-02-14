@@ -2,10 +2,11 @@ import { useState } from 'react'
 
 import './App.css'
 import { ThemeProvider } from '@emotion/react'
-import {theme, Button, CardWrapper, ButtonWrapper, TextWrapper, SpanText, Image } from './styles';
+import { theme, Button, CardWrapper, ButtonWrapper, SpanText, Image, ImageWrapper } from './styles';
 import beMine from './assets/beMine.gif';
 import beMine2 from './assets/beMine2.gif';
 import yesVal from './assets/yesVal.png';
+
 
 import Images from './assets/images';
 
@@ -44,11 +45,19 @@ function App() {
     const poem = document.querySelector('#poem');
     const newP = document.createElement('quote')
     poem.append(newP);
-    newP.innerHTML = `Because of you, I am who I am, <br/> You're everything I've ever <br/> wanted, hoped for, and dreamed of. <br/><br/> <b>'I love you to the moon and back'</b>`;
+    newP.innerHTML = `
+    <span style="color:red;font-size:16px;"> Happy Lovers day boo <br />
+                       You are an amazing person and I love you for your wonderful, strong and loving spirit.<br/>
+                        I’m glad we met and I’d do it over again. <br />
+    Thanks for your listening hears, forgiving spirits, thanks for believing in us.<br />
+    God Bless and Keep you.
+    </span>
+                
+    <p></p>
+     <b style="color:blue;font-size:46px;">Happy VALENTINE Babe</b>`;
 
     const text = document.querySelector('#text');
-    text.innerHTML = '<span style="color: purple; font-family: Roboto"; font-size: 6em; font-weight: 700>HAPPY VALENTINE</span>'
-
+    text.innerHTML = '<span style="color: purple; font-family: Roboto"; font-size: 6em; font-weight: 700>⥥</span>'
 
     const btnNo = document.querySelector('#round2');
     btnNo.style.display = 'none'
@@ -58,6 +67,9 @@ function App() {
     const imgCol = document.querySelector('#imgCol');
     imgCol.style.display = 'block';
 
+    const text2 = document.querySelector('#text2');
+    text2.innerHTML = `Because of you, I am who I am, <br/> You're everything I've ever <br/> wanted, hoped for, and dreamed of. <br/><br/> <b>'I love you to the moon and back'</b> <p></p>
+    `
 
   }
 
@@ -66,7 +78,8 @@ function App() {
 
     <ThemeProvider theme={theme}>
       <CardWrapper>
-        <Image src={beMine} id='img' />
+        <Image src={beMine} id='img' alt='image' />
+
         <ButtonWrapper>
           <Button onClick={handleYes} id='round'>YES</Button>
           <Button onClick={handleNo} id='round2'>NO</Button>
@@ -75,7 +88,11 @@ function App() {
         <SpanText id='poem'></SpanText>
         <SpanText id='text'></SpanText>
 
-        <Images id='imgCol' />
+        <ImageWrapper>
+          <Images id='imgCol'/>
+        </ImageWrapper>
+
+        <SpanText id='text2'></SpanText>
 
       </CardWrapper>
     </ThemeProvider >

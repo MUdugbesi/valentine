@@ -5,18 +5,22 @@ import { keyframes } from "@emotion/react";
 
 export const theme = {
   colors: {
-    p: 'red',
+    p: 'purple',
   }
 };
 
 export const Spin = keyframes`
-    from{
-        transform: rotate(0deg)
+    0%{
+        width: 40%
+    },
+    50%{
+      width: 45%
     }
-    to{
-        transform: rotate(360deg)
+    80%{
+        width: 50%
     }
 `;
+
 
 export const Text = styled.p`
     font-size: 32px;
@@ -52,8 +56,8 @@ display: flex;
   border-radius: 10px;
   border: 1px solid transparent;
   padding: 1em 2em;
-  font-size: 1em;
-  font-weight: 500;
+  font-size: 1.025em;
+  font-weight: 700;
   font-family: inherit;
   background-color: #7209b7;
   cursor: pointer;
@@ -124,28 +128,28 @@ gap: 70px;
 }
 `;
 
-export const TextWrapper = styled.div`
+export const ImageWrapper = styled.div`
 display: flex;
-width: auto;
+width: 100%;
 height: auto;
 padding: 1em 2em;
 justify-content: center;
-align-items = center;
+align-items: center;
 
 `;
 
 
 export const SpanText = styled.p`
-color: red;
+color: purple;
 text-align: center;
 font-family: 'Amita', serif;
 
 `;
 
 export const Image = styled.img`
-max-width: 100%;
+max-width: 80%;
 margin-top: 20%;
-margin-bottom: 10%;
+margin-bottom: 20%;
 animation: ${Spin} infinite 15s linear 10s;
 
 
