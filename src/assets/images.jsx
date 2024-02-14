@@ -70,7 +70,7 @@ const Images = ({ id }) => {
 
     setInterval(() => {
         loop()
-    }, 3500)
+    }, 5000)
 
     return (
         <>

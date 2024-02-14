@@ -56,7 +56,7 @@ function App() {
     <p></p>`
 
     const text3 = document.querySelector('#text3');
-    text3.innerHTML = `<b style="color:blue;">Happy VALENTINE Babe</b>`
+    text3.innerHTML = `<b style="color:blue; font-size: 46px; @media (max-width:400px){font-size: 12px}">Happy VALENTINE Babe</b>`
 
 
 

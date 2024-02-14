@@ -153,6 +153,7 @@ font-family: 'Amita', serif;
 @media (max-width:400px){
   width: 100%;
   padding: 1em 2em;
+  font-size: 12px;
 }
 `;
 
