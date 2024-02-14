@@ -143,7 +143,17 @@ export const SpanText = styled.p`
 color: purple;
 text-align: center;
 font-family: 'Amita', serif;
-
+@media (max-width:950px){
+  width: 100%;
+}
+@media (max-width:620px){
+  width: 90%;
+  padding: 1em 2em;
+}
+@media (max-width:400px){
+  width: 100%;
+  padding: 1em 2em;
+}
 `;
 
 export const Image = styled.img`

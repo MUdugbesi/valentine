@@ -53,8 +53,12 @@ function App() {
     God Bless and Keep you.
     </span>
                 
-    <p></p>
-     <b style="color:blue;font-size:46px;">Happy VALENTINE Babe</b>`;
+    <p></p>`
+
+    const text3 = document.querySelector('#text3');
+    text3.innerHTML = `<b style="color:blue;">Happy VALENTINE Babe</b>`
+
+
 
     const text = document.querySelector('#text');
     text.innerHTML = '<span style="color: purple; font-family: Roboto"; font-size: 6em; font-weight: 700>⥥</span>'
@@ -87,9 +91,10 @@ function App() {
 
         <SpanText id='poem'></SpanText>
         <SpanText id='text'></SpanText>
+        <SpanText id='text3' className='media'></SpanText>
 
         <ImageWrapper>
-          <Images id='imgCol'/>
+          <Images id='imgCol' />
         </ImageWrapper>
 
         <SpanText id='text2'></SpanText>

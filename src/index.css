@@ -43,6 +43,14 @@ h1 {
   line-height: 1.1;
 }
 
+/* @media only screen and (max-width:400px) {
+  #text3 {
+    width: 50%;
+    padding: 1em 2em;
+    font-size: 100px;
+  }
+} */
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
